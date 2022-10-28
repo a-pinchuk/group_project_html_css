@@ -29,11 +29,11 @@
     
 }
 
-.burger__svg1{
+.burger__icon--close{
     display: none;
 }
 
-.burger.is-open .burger__svg1{
+.burger.is-open .burger__icon--close{
     display: block;
     position: absolute;
     z-index: 888;
@@ -43,7 +43,6 @@
 
 
 .mobile-menu {
-    background-color: getColor('white');
     @include media-max(tablet){
         background-color: getColor('white');
         display: none;
@@ -92,9 +91,12 @@
             line-height: 16px;
             text-decoration-line: underline;
     
-            color: getColor(accent);
+            color: getColor('accent-green');
         }
     } 
+    @include media-min(desktop){
+        color: getColor('primary-text-color');
+    }
 }
 
 .mobile-menu__item {
@@ -103,7 +105,7 @@
         padding-left: 16px;
         height: 51px;
         &:active{
-            background: getColor('accent');
+            background: getColor('accent-green');
         }
     }
     
@@ -112,18 +114,19 @@
 .menu__order{
     display: none;
     cursor: pointer;
+    color: getColor('primary-text-color');
     @include media-min(tablet){
         width: 92px;
         height: 32px;
         margin-left: 2px;
         display: block;
-        background: getColor('accent');
+        background: getColor('accent-green');
         border: none;
         border-radius: 30px;
 
         font-weight: 500;
         font-size: 13px;
         line-height: 1.53;
-        color: getColor('secondary-text-color');
+        
     }
 }
