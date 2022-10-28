@@ -1,2 +1,15 @@
-@import './common';
-@import './example';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+// UTILS
+@import './utils/mixin';
+@import './utils/placeholders';
+@import './utils/variables';
+
+// BASE
+@import './base/colors';
+@import './base/globalStyles';
+@import './base/container';
+
+// COMPONENTS
+@import './components/header'
+
+// @import './example';

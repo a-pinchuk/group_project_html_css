@@ -1,0 +1,15 @@
+$colors: (
+    'primary-text-color': #212121,
+    'accent': #BBF330,
+    'secondary-text-color': #2C2C2C,
+    'background': #F5F5F5,
+    'secondary-background-color': #2F303A,
+    'white': #FEFEFE,
+    'black': #000000,
+    'hero-background': #C4C4C4,
+    'team-background': #F5F4FA
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
