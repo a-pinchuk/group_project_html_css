@@ -1,0 +1,57 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="icon-close" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-btn-close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form class="modal-form">
+            <div class="input-fild">
+                <label for="name" class="form-teg">Name</label>
+                <div class="input-wrap">
+                    <input
+                    minlength="4"
+                    maxlength="6"
+                    type="text"
+                    class="form-imput"
+                    name="user-name"
+                    required
+                    id="name"
+                    placeholder="Your name"
+                    />
+                </div>
+                
+            </div>
+            <div class="input-fild">
+                <label for="tel" class="form-teg">Phone number</label>
+                <div class="input-wrap">
+                    <input
+                    type="tel"
+                    class="form-imput"
+                    name="user-tel" 
+                    required
+                    id="tel"
+                    pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                    placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                    />
+                </div>
+            </div>
+
+            <div class="input-fild">
+                <label for="mail" class="form-teg">E-mail</label>
+                <div class="input-wrap">
+                    <input
+                    type="email"
+                    class="form-imput"
+                    name="user-mail"
+                    required
+                    id="mail"
+                    placeholder="example@gmail.com"
+                    />
+                </div>
+            </div>
+            <button type="submit" class="modal-btn">Send</button>
+        </form>
+    </div>
+</div>
