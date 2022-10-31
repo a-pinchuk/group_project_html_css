@@ -1,4 +1,7 @@
-
+.favorites{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .favorites__content{
     display: flex;
     flex-wrap: wrap;
@@ -10,13 +13,17 @@
 font-size: 28px;
 line-height: 1.17;
 text-align: center;
+margin-bottom: 20px;
 }
 .favorites__text{
     font-weight: 400;
 font-size: 14px;
 line-height: 1.14;
 text-align: center;
+margin-bottom: 60px;
 }
+
+
 
 
 .favorites__img{
@@ -24,10 +31,10 @@ text-align: center;
 border-radius: 139.658px;
 
 &:hover {border-color:#BBF330; }
-&:focus {border-color:#BBF330; }
-
-    
+&:focus {border-color:#BBF330; }   
 }
+
+
 
     @media screen and  (max-width:768px){
     
