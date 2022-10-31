@@ -85,13 +85,28 @@
     &:focus{
         outline-color: #2196F3;
     }
+    &:not(:focus):not(:placeholder-shown):valid{
+        border: 1px solid #7EB101;
+    }
+    &:not(:focus):not(:placeholder-shown):invalid + .error{
+        display: block;
+    }
+    &:not(:focus):not(:placeholder-shown):invalid{
+        border: 1px solid #FF705D;
+    }
 }
-.form-imput:not(:focus):not(:placeholder-shown):valid{
-    border: 1px solid #7EB101;
+.error{
+    display: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+
+
+    color: #FF705D
 }
-.form-imput:not(:focus):not(:placeholder-shown):invalid{
-    border: 1px solid #FF705D;
-}
+
 .form-teg{
     font-family: 'Roboto';
     font-style: normal;

@@ -11,8 +11,8 @@
                 <label for="name" class="form-teg">Name</label>
                 <div class="input-wrap">
                     <input
-                    minlength="4"
-                    maxlength="6"
+                    minlength="3"
+                    maxlength="25"
                     type="text"
                     class="form-imput"
                     name="user-name"
@@ -20,8 +20,13 @@
                     id="name"
                     placeholder="Your name"
                     />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        The name must be between 3 and 25 characters
+                    </span>
                 </div>
-                
             </div>
             <div class="input-fild">
                 <label for="tel" class="form-teg">Phone number</label>
@@ -35,6 +40,12 @@
                     pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                     placeholder="+38(0_ _) _ _ _   _ _   _ _"
                     />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        This phone must be in the format  099 000 00 00
+                    </span>
                 </div>
             </div>
 
@@ -49,6 +60,12 @@
                     id="mail"
                     placeholder="example@gmail.com"
                     />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        Please enter a valid email address
+                    </span>
                 </div>
             </div>
             <button type="submit" class="modal-btn">Send</button>
