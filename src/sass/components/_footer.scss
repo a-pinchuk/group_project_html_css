@@ -1,5 +1,5 @@
 .footer__container {
-  background: #fefefe;
+  background: getColor('white');
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -70,8 +70,8 @@
     flex-wrap: wrap;
 
     @include media-min(desktop) {
-      margin-bottom: 80px;
       flex-wrap: nowrap;
+      margin-bottom: 80px;
     }
 
     &__list {
@@ -142,14 +142,10 @@
     }
   }
   .subscribe__header {
-    margin-bottom: 12px;
     font-weight: 500;
     line-height: 1.5;
     color: getColor('primary-text-color');
-    width: 100%;
-    @include media-min(desktop) {
-      width: auto;
-    }
+    margin-bottom: 12px;
   }
 
   .subscribe__input {
