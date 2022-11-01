@@ -6,7 +6,7 @@
   background-image: url(../images/footer/mob-bottom@1x.png),
     url(../images/footer/mob-right@1x.png),
     url(../images/footer/mob-left@1x.png);
-  background-position: center bottom, top right, top 132px left;
+  background-position: center bottom, top right, top 137px left;
   background-repeat: no-repeat;
 
   @media (min-device-pixel-ratio: 2),
@@ -134,17 +134,11 @@
   .subscribe__form {
     position: relative;
     flex-wrap: wrap;
-    @include media-min(mobile) {
-      width: 440px;
-    }
+
     @include media-min(tablet) {
       display: flex;
       flex-wrap: nowrap;
       margin-bottom: 12px;
-      width: 767px;
-    }
-    @include media-min(desktop) {
-      width: auto;
     }
   }
   .subscribe__header {
