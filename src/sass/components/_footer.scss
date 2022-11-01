@@ -87,7 +87,6 @@
 
     &__link {
       font-weight: 400;
-      font-size: 14px;
       line-height: 1.1;
       letter-spacing: normal;
       color: getColor('black');
@@ -151,7 +150,6 @@
   .subscribe__header {
     margin-bottom: 12px;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.5;
     color: getColor('primary-text-color');
     width: 100%;
@@ -200,7 +198,7 @@
   .error__input {
     position: absolute;
     display: none;
-    top: 40px;
+    top: 42px;
     left: 0px;
     font-weight: 400;
     font-size: 10px;
