@@ -1,0 +1,112 @@
+.hero {
+  @include media-max(desktop) {
+    margin-top: 60px;
+  }
+
+  @include media-max(tablet) {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+
+    @include media-min(tablet) {
+      width: 537px;
+      font-size: 42px;
+      line-height: 1.19;
+      margin-bottom: 44px;
+    }
+
+    @include media-min(desktop) {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+
+    @include media-min(tablet) {
+      font-size: 16px;
+      margin-bottom: 40px;
+      width: 336px;
+    }
+
+    @include media-min(desktop) {
+      width: 502px;
+    }
+  }
+
+  &__button {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+
+    padding: 6px 18px;
+    border-radius: 30px;
+
+    color: getColor('primary-text-color');
+    background-color: getColor('accent-green');
+  }
+
+  &__slider {
+    @include media-max(tablet) {
+      display: none;
+    }
+
+    @include media-min(tablet) {
+      display: block;
+      width: 336px;
+      height: 320px;
+      border: 14px solid getColor('yellow-main');
+      border-radius: 50%;
+    }
+
+    @include media-max(desktop) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @include media-min(desktop) {
+      display: block;
+      width: 608px;
+      height: 580px;
+
+      border: 26px solid getColor('yellow-main');
+      border-radius: 50%;
+    }
+  }
+
+  &__wrap {
+    @include media-min(tablet) {
+      display: flex;
+      position: relative;
+
+      padding-bottom: 73px;
+    }
+
+    @include media-min(desktop) {
+      padding-bottom: 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__elements {
+    @include media-min(desktop) {
+      width: 503px;
+      padding-top: 159px;
+      padding-bottom: 164px;
+    }
+  }
+}
