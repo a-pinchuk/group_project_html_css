@@ -59,15 +59,25 @@
     border: 0.854167px solid getColor('yellow-main');
     border-radius: 30px;
 
-    
-    &:focus:valid {
-        outline: none;
-        border: 0.854167px solid #7EB101;
-      }
-
-    &:invalid {
-        border: 0.854167px solid #FF705D;
+    &:not(:focus):not(:placeholder-shown):valid{
+        border: 1px solid #7EB101;
     }
+    &:not(:focus):not(:placeholder-shown):invalid + .error{
+        display: block;
+    }
+    &:not(:focus):not(:placeholder-shown):invalid{
+        border: 1px solid #FF705D;
+    }
+    
+    // &:focus:valid {
+    //     outline: none;
+    //     border: 0.854167px solid #7EB101;
+    //   }
+
+    // &:invalid {
+    //     outline: none;
+    //     border: 0.854167px solid #FF705D;
+    // }
 
     @include media-min(tablet){
         width: 395px;
@@ -80,6 +90,8 @@
     width: 103px;
     height: 42px;
     margin-left: auto;
+
+    cursor: pointer;
     background: getColor('accent-green');
     border-radius: 30px;
 
