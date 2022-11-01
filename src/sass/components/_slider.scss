@@ -1,0 +1,26 @@
+.slider {
+    border: 14px solid #FFE550;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 292px;
+    height: 292px;
+    // @media screen and (min-width:1280px){
+    //     border: 26px solid #FFE550;
+    //         width: 528px;
+    //         height: 528px;
+    // }
+    @media (max-width: 767px){
+        display: none;
+    }
+}
+.slider-line {
+    display: flex;
+    // height: 292px;
+    // width: 876px;
+    transition: all ease 1s;
+    background-color: F5F5F5;
+    position: relative;
+}
+img {
+    position: absolute;
+}
