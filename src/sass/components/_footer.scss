@@ -69,6 +69,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include media-min(tablet) {
+      align-items: center;
+    }
+
     @include media-min(desktop) {
       flex-wrap: nowrap;
       margin-bottom: 80px;
@@ -99,7 +103,7 @@
     margin-bottom: 40px;
     @include media-min(tablet) {
       margin-left: 114px;
-      align-self: center;
+      // align-self: center;
     }
     @include media-min(desktop) {
       margin-left: 0;
@@ -114,7 +118,6 @@
         margin-bottom: 40px;
       }
       @include media-min(desktop) {
-        margin-bottom: 0;
         margin-right: 148px;
       }
     }
