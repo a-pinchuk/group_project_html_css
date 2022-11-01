@@ -1,4 +1,7 @@
+// NORMALIZE
 @import '~node_modules/modern-normalize/modern-normalize.css';
+// FONTS
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap';
 // UTILS
 @import './utils/mixin';
 @import './utils/placeholders';
@@ -12,4 +15,4 @@
 // COMPONENTS
 @import './components/header';
 @import './components/offerings';
-// @import './example';
+@import './components/subscribe';
