@@ -27,6 +27,8 @@
     background-size: 253px 66px, 104px 259px, 110px 116px;
   }
   @include media-min(tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url(../images/footer/tab-bottom@1x.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -70,7 +72,6 @@
     @include media-min(desktop) {
       margin-bottom: 80px;
       flex-wrap: nowrap;
-      align-items: center;
     }
 
     &__list {
@@ -94,11 +95,12 @@
   }
 
   .footer__main-nav {
-    margin-right: 64px;
+    margin-right: 101px;
     margin-left: auto;
     margin-bottom: 40px;
     @include media-min(tablet) {
       margin-left: 114px;
+      align-self: center;
     }
     @include media-min(desktop) {
       margin-left: 0;
@@ -219,6 +221,8 @@
     line-height: 1.5;
     color: getColor('primary-text-color');
     border: 0.854167px solid getColor('dark-green');
+    background-color: getColor('white');
+
     border-radius: 30px;
     padding: 11px 22px;
     margin-bottom: 20px;
