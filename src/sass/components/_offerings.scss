@@ -121,6 +121,7 @@ img {
     line-height: 1.17;
 
     @include media-min(tablet) {
+        margin-bottom: 20px;
         font-size: 42px;
         line-height: 1.17;
     }
@@ -145,6 +146,7 @@ img {
 
 
     @include media-min(tablet) {
+        max-width: 500px;
         font-size: 16px;
         line-height: 1.19;
         margin-bottom: 40px;
