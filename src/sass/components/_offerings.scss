@@ -5,7 +5,6 @@ img {
 }
 
 .offerings {
-
     padding-top: 41px;
     padding-bottom: 60px;
     margin: 0 auto;
@@ -49,7 +48,7 @@ img {
 
     @include media-min(tablet) {
         max-width: 768px;
-
+        margin-top: -108px;
         padding-top: 150px;
         padding-bottom: 100px;
 
@@ -70,7 +69,7 @@ img {
 
     @include media-min(desktop) {
         max-width: 1280px;
-
+        margin-top: -161px;
         padding-top: 177px;
         padding-bottom: 43px;
 
