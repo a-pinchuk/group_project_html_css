@@ -89,7 +89,7 @@
   }
   @include media-min(desktop) {
     margin-left: 0;
-    margin-right: 320px;
+    // margin-right: 320px;
   }
 }
 
@@ -108,9 +108,15 @@
     max-width: 480px;
   }
 
+  @include media-max(tablet) {
+    width: 100%;
+  }
+
   @include media-min(desktop) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
   }
 }
 .footer__subscribe__form {
@@ -287,7 +293,7 @@
 .footer__nav__list {
   gap: 20px;
 
-  @include media-min(tablet){
+  @include media-min(tablet) {
     gap: 28px;
   }
 }
