@@ -68,8 +68,8 @@
       display: block;
       width: 336px;
       height: 320px;
-      border: 14px solid getColor('yellow-main');
-      border-radius: 50%;
+      // border: 14px solid getColor('yellow-main');
+      // border-radius: 50%;
     }
 
     @include media-max(desktop) {
@@ -83,8 +83,8 @@
       width: 608px;
       height: 580px;
 
-      border: 26px solid getColor('yellow-main');
-      border-radius: 50%;
+      // border: 26px solid getColor('yellow-main');
+      // border-radius: 50%;
     }
   }
 
