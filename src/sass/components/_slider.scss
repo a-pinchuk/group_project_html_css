@@ -1,11 +1,16 @@
 .slider {
+<<<<<<< Updated upstream
     border: 14px solid #FFE550;
+=======
+    border: 14px solid getColor('yellow-main');
+>>>>>>> Stashed changes
     border-radius: 50%;
     overflow: hidden;
     width: 292px;
     height: 292px;
     display: block;
         box-sizing: content-box;
+<<<<<<< Updated upstream
     // position: relative;
     @media screen and (min-width:1280px){
         border: 26px solid #FFE550;
@@ -15,6 +20,15 @@
     @media (max-width: 767px){
         display: none;
     }
+=======
+
+    @include media-min(desktop){
+        border: 26px solid getColor('yellow-main');
+            width: 528px;
+            height: 528px;
+    }
+
+>>>>>>> Stashed changes
 }
 .slider-line {
     display: flex;
@@ -24,7 +38,11 @@
     background-color: F5F5F5;
     position: relative;
         transform: translate(0px);
+<<<<<<< Updated upstream
         @media (min-width: 1280px) {
+=======
+@include media-min(desktop) {
+>>>>>>> Stashed changes
             height: 528px;
             width: 1584px;
         }
@@ -43,7 +61,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+<<<<<<< Updated upstream
 @media (min-width: 1280px) {
+=======
+@include media-min(desktop) {
+>>>>>>> Stashed changes
 width: 48px;
 height: 40px;
 }
@@ -61,7 +83,11 @@ transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
+<<<<<<< Updated upstream
 .container {
+=======
+.slider-container {
+>>>>>>> Stashed changes
  
     width: 336px;
     height: 320px;
@@ -69,25 +95,41 @@ transform: translateY(-50%);
         padding-left: 8px;
             padding-right: 8px;
 
+<<<<<<< Updated upstream
  @media (min-width: 1280px) {
             width: 608px;
                 height: 580px;
  }
 @media (max-width: 767px) {
+=======
+@include media-min(desktop) {
+            width: 598px;
+                height: 580px;
+ }
+@include media-max(tablet) {
+>>>>>>> Stashed changes
     display: none;
 }
 }
 .slider-icon {
     width: 16px;
     height: 29px;
+<<<<<<< Updated upstream
     @media (max-width: 1279px) {
+=======
+    @include media-max(desktop) {
+>>>>>>> Stashed changes
 display: none;
     }
 }
 .slider-icon-min {
     width: 11px;
     height: 20px;
+<<<<<<< Updated upstream
     @media (min-width: 1280px) {
+=======
+@include media-min(desktop) {
+>>>>>>> Stashed changes
         display: none;
     }
 }
