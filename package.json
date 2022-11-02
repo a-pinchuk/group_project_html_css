@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/a-pinchuk/group_project_html_css",
+  "homepage": "https://github.com/Zhenya-Plyasova/command-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /group_project_html_css/"
+    "build": "parcel build src/*.html --public-url /command-project/"
   },
   "repository": {
     "type": "git",

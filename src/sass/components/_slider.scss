@@ -78,11 +78,16 @@ transform: translateY(-50%);
 }
 }
 .slider-icon {
-    width: 11px;
-    height: 20px;
-    // viewport-fit: auto;
-    @media (min-width: 1280px) {
     width: 16px;
     height: 29px;
+    @media (max-width: 1279px) {
+display: none;
+    }
+}
+.slider-icon-min {
+    width: 11px;
+    height: 20px;
+    @media (min-width: 1280px) {
+        display: none;
     }
 }
