@@ -9,11 +9,9 @@
 
 .modal{
     position: absolute;
+    width: 100%;
     min-height: 449px;
     background: getColor('yellow-main');
-    @media screen and (max-width: 767px) {
-        max-width: 100%;
-    }
     @media screen and (min-width: 768px) {
         width: 458px;
     }
@@ -87,10 +85,10 @@
         color: #C4C4C4;
     }
     &:hover{
-        border-color: #2196f3;
+        border-color: #7EB101;
     }
     &:focus{
-        outline-color: #2196F3;
+        outline-color: #7EB101;
     }
     &:not(:focus):not(:placeholder-shown):valid{
         border: 1px solid #7EB101;
