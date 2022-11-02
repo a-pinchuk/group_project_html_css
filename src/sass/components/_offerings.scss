@@ -14,36 +14,36 @@ img {
     width: 100%;
     height: auto;
 
-    background-image: url(../images/background-offerings/background-1x.jpg);
+    background-image: url(../images/background-offerings/background-1x.png);
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/background-offerings/background-2x.jpg);
+        background-image: url(../images/background-offerings/background-2x.png);
     }
 
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-        background-image: url(../images/background-offerings/background-3x.jpg);
+        background-image: url(../images/background-offerings/background-3x.png);
     }
 
 
     @include media-min(mobile) {
         max-width: 480px;
-        background-image: url(../images/background-offerings/background-mobil-1x.jpg);
+        background-image: url(../images/background-offerings/background-mobil-1x.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/background-offerings/background-mobil-2x.jpg);
+            background-image: url(../images/background-offerings/background-mobil-2x.png);
         }
 
         @media (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-            background-image: url(../images/background-offerings/background-mobil-3x.jpg);
+            background-image: url(../images/background-offerings/background-mobil-3x.png);
         }
     }
 
@@ -53,18 +53,18 @@ img {
         padding-top: 150px;
         padding-bottom: 100px;
 
-        background-image: url(../images/background-offerings/background-tablet-1x.jpg);
+        background-image: url(../images/background-offerings/background-tablet-1x.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/background-offerings/background-tablet-2x.jpg);
+            background-image: url(../images/background-offerings/background-tablet-2x.png);
         }
 
         @media (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-            background-image: url(../images/background-offerings/background-tablet-3x.jpg);
+            background-image: url(../images/background-offerings/background-tablet-3x.png);
         }
     }
 
@@ -74,18 +74,18 @@ img {
         padding-top: 177px;
         padding-bottom: 43px;
 
-        background-image: url(../images/background-offerings/background-desktop-1x.jpg);
+        background-image: url(../images/background-offerings/background-desktop-1x.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/background-offerings/background-desktop-2x.jpg);
+            background-image: url(../images/background-offerings/background-desktop-2x.png);
         }
 
         @media (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-            background-image: url(../images/background-offerings/background-desktop-3x.jpg);
+            background-image: url(../images/background-offerings/background-desktop-3x.png);
         }
 
     }
