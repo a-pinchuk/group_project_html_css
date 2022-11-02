@@ -10,12 +10,38 @@
 }
 
 .title-description {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .review-item {
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 30px;
-    border-top-left-radius: 0;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+}
+
+.icon-stars {
+  margin-bottom: 28px;
+}
+
+.review-description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 40px;
+}
+
+.wrapper-signature {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  border-right: 1px solid #7EB101;
+}
+
+.wrapper-name {
+  margin-left: 16px;
+}
+
+.review-item + .review-item {
+    margin-top: 24px;
 }
