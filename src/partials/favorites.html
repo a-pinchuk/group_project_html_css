@@ -5,10 +5,19 @@
 <p class="favorites__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <ul class="favorites__content">
     <li class="favorites__list">
-        <source srcset=" /src/images/favoritesimj/gamburgertelx1.jpg,/src/images/favoritesimj/gamburgertel2x.jpg,/src/images/favoritesimj/gamburgertelx3.jpg " media="(max-width:767px )">
+        <picture>
+            <source srcset="/src/images/favoritesimj/gamburgers.png 1x,/src/images/favoritesimj/gamburgers2x.png 2x,/src/images/favoritesimj/gamburgers3x.png 3x" media="(max-width: 767px)">
+            <source srcset="/src/images/favoritesimj/gamburgerm.png 1x,/src/images/favoritesimj/gamburgerm2x.png 2x,/src/images/favoritesimj/gamburgerm3x.png 3x" media="(min-width: 768px)">
+            <source srcset="/src/images/favoritesimj/gamburgerl.png 1x,/src/images/favoritesimj/gamburgerl2x.png 2x,/src/images/favoritesimj/gamburgerl3x.png 3x" media="(min-width:1200px)">
+            <!-- <source srcset="./images/favoritesimj/gamburger_m_test.png" media="(min-width: 768px)">
+            <source srcset="./images/favoritesimj/gamburger_m_test.png" media="(max-width: 767px)"> -->
+            <img class="favorites__img" src="/src/images/favoritesimj/gamburgerl.png" alt="Бургер"> 
+        </picture> 
+
+        <!-- <source srcset=" /src/images/favoritesimj/gamburgertelx1.jpg,/src/images/favoritesimj/gamburgertel2x.jpg,/src/images/favoritesimj/gamburgertelx3.jpg " media="(max-width:767px )">
         <source srcset=" /src/images/favoritesimj/gamburgertabx1.jpg,/src/images/favoritesimj/gamburgertab2x.jpg,/src/images/favoritesimj/gamburgertabx3.jpg  " media="(min-width:768px )">
         <source srcset=" /src/images/favoritesimj/gamburgerdexx1.jpg,/src/images/favoritesimj/gamburgerdex2x.jpg,/src/images/favoritesimj/gamburgerdexx3.jpg  " media="(min-width:1200px )">
-        <img class="favorites__img" src="/src/images/favoritesimj/gamburgertabx1.jpg" alt="Бургер">  
+        <img class="favorites__img" src="/src/images/favoritesimj/gamburgertabx1.jpg" alt="Бургер">   -->
     </li>
     <li class="favorites__list">
         <source srcset=" /src/images/favoritesimj/Pastatelx1.jpg,/src/images/favoritesimj/Pastatel2x.jpg,/src/images/favoritesimj/Pastatelx3.jpg " media="(max-width:767px )">
