@@ -9,7 +9,7 @@
 
 .modal{
     position: absolute;
-    width: 100%;
+    width: 320px;
     min-height: 449px;
     background: getColor('yellow-main');
     @media screen and (min-width: 768px) {
