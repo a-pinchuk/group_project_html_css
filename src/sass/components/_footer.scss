@@ -137,39 +137,13 @@
 }
 
 .footer__subscribe__input {
-  outline: transparent;
-  border: 1px solid getColor('yellow-main');
-  border-radius: 30px;
-  width: 100%;
-  min-width: 279px;
-  margin-bottom: 20px;
-  padding: 12px;
-
   @include media-min(tablet) {
     width: 279px;
     margin-right: 13px;
     margin-bottom: 0px;
   }
   @include media-min(desktop) {
-    width: auto;
     margin-right: 0;
-  }
-
-  &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-
-    color: #505050;
-  }
-  &:not(:placeholder-shown) {
-    border: 1px solid getColor('dark-green');
-  }
-  &:invalid {
-    border: 1px solid getColor('red');
-  }
-  &:invalid + .error__input {
-    display: block;
   }
 }
 
