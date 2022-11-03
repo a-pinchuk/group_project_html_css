@@ -32,10 +32,9 @@
                 <label for="tel" class="form-teg">Phone number</label>
                 <div class="input-wrap">
                     <input
-                    type="tel"
-                    minlength="13"
-                    maxlength="13"
-                    class="form-imput"
+                    minlength="18"
+                    maxlength="18"
+                    class="form-imput tel"
                     name="user-tel" 
                     required
                     id="tel"
@@ -59,6 +58,7 @@
                     name="user-mail"
                     required
                     id="mail"
+                    pattern="*@*.*"
                     placeholder="example@gmail.com"
                     />
                     <span class="error">
@@ -73,3 +73,6 @@
         </form>
     </div>
 </div>
+
+<!-- minlength="13"
+                    maxlength="13" -->
