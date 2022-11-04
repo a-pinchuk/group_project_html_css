@@ -1,6 +1,5 @@
 .hero {
   z-index: 2;
-  padding-top: 77.8px;
   @include media-max(desktop) {
     margin-top: 60px;
   }
