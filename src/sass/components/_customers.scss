@@ -7,7 +7,7 @@
 }
 
 .customers__container {
-  background-image: url(../images/customers/320mob_customers1x.jpg);
+  background-image: url(../images/customers/320mob_customers1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -16,57 +16,57 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/customers/320mob_customers2x.jpg);
+    background-image: url(../images/customers/320mob_customers2x.png);
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    background-image: url(../images/customers/320mob_customers3x.jpg);
+    background-image: url(../images/customers/320mob_customers3x.png);
   }
 
   @include media-min(mobile) {
-    background-image: url(../images/customers/480mob_customers1x.jpg);
+    background-image: url(../images/customers/480mob_customers1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/480mob_customers2x.jpg);
+      background-image: url(../images/customers/480mob_customers2x.png);
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../images/customers/480mob_customers3x.jpg);
+      background-image: url(../images/customers/480mob_customers3x.png);
     }
   }
   @include media-min(tablet) {
-    background-image: url(../images/customers/tab_customers1x.jpg);
+    background-image: url(../images/customers/tab_customers1x.png);
     padding-bottom: 120px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/tab_customers2x.jpg);
+      background-image: url(../images/customers/tab_customers2x.png);
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../images/customers/tab_customers3x.jpg);
+      background-image: url(../images/customers/tab_customers3x.png);
     }
   }
   @include media-min(desktop) {
-    background-image: url(../images/customers/desk_customers1x.jpg);
+    background-image: url(../images/customers/desk_customers1x.png);
     padding-top: 100px;
     padding-bottom: 200px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers/desk_customers2x.jpg);
+      background-image: url(../images/customers/desk_customers2x.png);
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../images/customers/desk_customers3x.jpg);
+      background-image: url(../images/customers/desk_customers3x.png);
     }
   }
 }
