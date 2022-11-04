@@ -1,6 +1,12 @@
-.favorites{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.favorites {
+    margin-top: 60px;
+
+    @include media-min(tablet){
+        margin-top: 100px;
+    }
+}
+
+.favorites .container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    width: 280px;
+    height: 282px;
     margin-bottom: 20px;
     border: 11px solid #FFE550;
     border-radius: 139.658px;
@@ -35,7 +44,7 @@
     }
     @include media-min(desktop){
         border: 16px solid #FFE550;
-        border-radius: 50%;
+        border-radius: 197.5px;
         height: 397px;
         flex-basis: calc((100% - 6 * 16px) / 3); 
     }
