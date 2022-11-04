@@ -58,6 +58,10 @@
 
     color: getColor('primary-text-color');
     background-color: getColor('accent-green');
+    &:hover,
+    &:focus {
+      background: #b5ff00;
+    }
   }
 
   &__slider {
