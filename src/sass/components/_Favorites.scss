@@ -1,40 +1,76 @@
 .favorites{
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .favorites__content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
     
-    @media screen and  (min-width:768px){
-    gap: 32px; }
+    @include media-min(tablet){
+        margin: -16px;
+    }
     
 }
 
- .favorites__list{
+.favorites__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     border: 11px solid #FFE550;
-    border-radius: 50%;
-    
- }   
- .favorites__content .favorites__list + .favorites__list{
-    margin-top: 20px;
+    border-radius: 139.658px;
+
+    @include media-min(tablet){
+        margin: 16px;
+        height: 338px;
+        flex-basis: calc((100% - 4 * 16px) / 2);
+        border: 14px solid #FFE550;
+        border-radius: 167.59px;
+    }
+    @include media-min(desktop){
+        border: 16px solid #FFE550;
+        border-radius: 50%;
+        height: 397px;
+        flex-basis: calc((100% - 6 * 16px) / 3); 
+    }
  }   
 
 .favorites__title{
+    max-width: 280px;
     font-weight: 700;
-font-size: 28px;
-line-height: 1.17;
-text-align: center;
-margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include media-min(tablet){
+        max-width: 656px;
+
+        font-size: 42px;
+        line-height: 49px;
+    }
+
 }
 .favorites__text{
     font-weight: 400;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include media-min(tablet){
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        max-width: 656px;
+    }
 }
 
 .favorites__img{
@@ -56,4 +92,10 @@ border-radius: 139.658px;
         
     }
 
-   
+.favorites__list--hidden {
+    display: none;
+
+    @include media-min(tablet){
+        display: flex;
+    }
+}
