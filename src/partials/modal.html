@@ -1,0 +1,78 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="icon-close" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-btn-close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form class="modal-form">
+            <div class="input-fild">
+                <label for="name" class="form-teg">Name</label>
+                <div class="input-wrap">
+                    <input
+                    minlength="3"
+                    maxlength="25"
+                    type="text"
+                    class="form-imput"
+                    name="user-name"
+                    required
+                    id="name"
+                    placeholder="Your name"
+                    />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        The name must be between 3 and 25 characters
+                    </span>
+                </div>
+            </div>
+            <div class="input-fild">
+                <label for="tel" class="form-teg">Phone number</label>
+                <div class="input-wrap">
+                    <input
+                    minlength="18"
+                    maxlength="18"
+                    class="form-imput tel"
+                    name="user-tel" 
+                    required
+                    id="tel"
+                    placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                    />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        This phone must be in the format  099 000 00 00
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-fild">
+                <label for="mail" class="form-teg">E-mail</label>
+                <div class="input-wrap">
+                    <input
+                    type="email"
+                    class="form-imput"
+                    name="user-mail"
+                    required
+                    id="mail"
+                    pattern="*@*.*"
+                    placeholder="example@gmail.com"
+                    />
+                    <span class="error">
+                        <svg class="icon-error" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-error"></use>
+                        </svg>
+                        Please enter a valid email address
+                    </span>
+                </div>
+            </div>
+            <button type="submit" class="modal-btn">Send</button>
+        </form>
+    </div>
+</div>
+
+<!-- minlength="13"
+                    maxlength="13" -->

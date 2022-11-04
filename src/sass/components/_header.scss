@@ -1,132 +1,126 @@
 .header {
-    // background-color: getColor('white');
-    margin-bottom: 60px;
-}
-
-.header .container {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .header .container {
+    background-color: getColor('white');
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-}
-
-.header__nav{
+  }
+  .logo {
+    width: 66px;
+    height: 54px;
+  }
+  .header__nav {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+  
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.burger{
+  }
+  
+  .burger {
     display: none;
-    @include media-max(tablet){
-        display: inline-flex;
-        padding: 0;
-        margin: 0;
-        border: none;
-        background-color: transparent;
+    @include media-max(tablet) {
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
     }
-    
-}
-
-.burger__icon--close{
+  }
+  
+  .burger__icon--close {
     display: none;
-}
-
-.burger.is-open .burger__icon--close{
+  }
+  
+  .burger.is-open .burger__icon--close {
     display: block;
     position: absolute;
     z-index: 888;
     right: 0px;
     top: 50px;
-}
-
-
-.mobile-menu {
-    @include media-max(tablet){
-        background-color: getColor('white');
-        display: none;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 130px;
-        height: 255px;
-        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-        border-radius: 30px 0px 30px 30px;
-        overflow: hidden;
-
-        &.is-open{
-            display: block;
-        }
-        
+  }
+  
+  .mobile-menu {
+    @include media-max(tablet) {
+      background-color: getColor('white');
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 130px;
+      height: 255px;
+      box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+      border-radius: 30px 0px 30px 30px;
+      overflow: hidden;
+  
+      &.is-open {
+        display: block;
+      }
     }
-
-}
-
-.mobile-menu__list{
-    @include media-min(tablet){
-        @include centeredFlex();
+  }
+  
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    @include media-min(tablet) {
+      @include centeredFlex();
+      flex-direction: row;
+      gap: 28px;
     }
-}
-
-.mobile-menu__item:not(:last-child){
-    @include media-min(tablet){
-        margin-bottom: 0;
-        margin-right: 28px;
-    }
-}
-
-.mobile-menu__link {
+  }
+  
+  .menu__link {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    /* identical to box height */
+    line-height: 1.14;
+    letter-spacing: normal;
     color: getColor('black');
-
-    @include media-min(tablet){
-        &:hover,
-        &:focus {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            text-decoration-line: underline;
-    
-            color: getColor('accent-green');
-        }
-    } 
-    @include media-min(desktop){
-        color: getColor('primary-text-color');
+  
+    @include media-min(tablet) {
+      &:hover,
+      &:focus {
+        text-decoration-line: underline;
+  
+        color: getColor('accent-green');
+      }
     }
-}
-
-.mobile-menu__item {
-    @include media-max(tablet){
-        padding-top: 16px;
-        padding-left: 16px;
-        height: 51px;
-        &:active{
-            background: getColor('accent-green');
-        }
+    @include media-min(desktop) {
+      color: getColor('primary-text-color');
     }
-    
-}
-
-.menu__order{
+  }
+  
+  .menu__item {
+    @include media-max(tablet) {
+      padding-top: 16px;
+      padding-left: 16px;
+      height: 51px;
+      &:active {
+        background: getColor('accent-green');
+      }
+    }
+  }
+  
+  .menu__order {
     display: none;
     cursor: pointer;
     color: getColor('primary-text-color');
-    @include media-min(tablet){
-        width: 92px;
-        height: 32px;
-        margin-left: 2px;
-        display: block;
-        background: getColor('accent-green');
-        border: none;
-        border-radius: 30px;
-
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.53;
-        
+    @include media-min(tablet) {
+      width: 92px;
+      height: 32px;
+      margin-left: 2px;
+      display: block;
+      background: getColor('accent-green');
+      border: none;
+      border-radius: 30px;
+  
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.53;
     }
-}
+  }
+  
