@@ -6,13 +6,15 @@
   }
 }
 
-.customers__container {
+.customers {
   background-image: url(../images/customers/320mob_customers1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 30px;
+
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

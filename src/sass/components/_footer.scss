@@ -1,13 +1,14 @@
 .footer {
   margin-top: 60px;
+  background: getColor('white');
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   @include media-min(tablet){
     margin-top: 100px;
   }
 }
 
 .footer__container {
-  background: getColor('white');
-  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(../images/footer/mob-bottom@1x.png),

@@ -35,6 +35,12 @@
     border: 11px solid #FFE550;
     border-radius: 139.658px;
 
+
+    &:hover,
+    &:focus {
+        border-color: getColor('accent-green');
+    }
+
     @include media-min(tablet){
         margin: 16px;
         height: 338px;
@@ -42,12 +48,15 @@
         border: 14px solid #FFE550;
         border-radius: 167.59px;
     }
+
     @include media-min(desktop){
         border: 16px solid #FFE550;
         border-radius: 197.5px;
         height: 397px;
         flex-basis: calc((100% - 6 * 16px) / 3); 
     }
+
+
  }   
 
 .favorites__title{
