@@ -87,6 +87,13 @@
 
 }
 
+.offerings__description{
+    @include media-min(desktop){
+        margin-top: 99px;
+    }
+    
+}
+
 .offerings__img {
     display: block;
     margin: 0 auto;
