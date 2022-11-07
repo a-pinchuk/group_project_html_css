@@ -44,11 +44,11 @@
       url(../images/footer/tab_bottom-left@1x.png);
     background-repeat: no-repeat;
     background-position: top 0px right 0px, bottom 0px right 94px,
-      bottom 0px right 0px, bottom center, bottom 0px left 136px,
-      bottom 0px left 0px;
+      bottom 0px right 0px, bottom center, bottom 0px left 156px,
+      bottom -39px left 0px;
 
-    // background-size: 203px 365px, 96px 289px, 171px 141px, 170px 69px,
-    // 193px 153px, 221px 82px, 168px 92px, 184px 101px;
+    background-size: 203px 365px, 171px 141px, 170px 69px, 338px 129px,
+      168px 92px, 184px 101px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -59,12 +59,6 @@
         url(../images/footer/tab_bottom-center@2x.png),
         url(../images/footer/tab_bottom-center-3@2x.png),
         url(../images/footer/tab_bottom-left@2x.png);
-      background-repeat: no-repeat;
-      background-position: top 0px right 0px, bottom 0px right 94px,
-        bottom 0px right 0px, bottom center, bottom 0px left 136px,
-        bottom -30px left 0px;
-      background-size: 203px 365px, 171px 141px, 170px 69px, 338px 129px,
-        168px 92px, 184px 101px;
     }
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
@@ -75,12 +69,6 @@
         url(../images/footer/tab_bottom-center@3x.png),
         url(../images/footer/tab_bottom-center-3@3x.png),
         url(../images/footer/tab_bottom-left@3x.png);
-      background-repeat: no-repeat;
-      // background-position: top 0px right 0px, bottom 0px right 94px,
-      //   bottom 0px right 0px, bottom center, bottom 0px left 136px,
-      //   bottom 0px left 0px;
-      // background-size: 203px 365px, 171px 141px, 170px 69px, 338px 129px, 193px 153px,
-      //   168px 92px, 184px 101px;
     }
   }
   @include media-min(desktop) {
