@@ -97,6 +97,11 @@
   background: getColor('accent-green');
   border-radius: 30px;
 
+  &:hover,
+  &:focus {
+    background-color: getColor('green-hover');
+  }
+
   @include media-min(tablet) {
     margin-left: 0;
   }
