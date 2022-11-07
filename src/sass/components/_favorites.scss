@@ -32,7 +32,7 @@
     width: 280px;
     height: 282px;
     margin-bottom: 20px;
-    border: 11px solid #FFE550;
+    border: 11px solid getColor('yellow-main');
     border-radius: 139.658px;
 
 
@@ -45,12 +45,12 @@
         margin: 16px;
         height: 338px;
         flex-basis: calc((100% - 4 * 16px) / 2);
-        border: 14px solid #FFE550;
+        border: 14px solid getColor('yellow-main');
         border-radius: 167.59px;
     }
 
     @include media-min(desktop){
-        border: 16px solid #FFE550;
+        border: 16px solid getColor('yellow-main');
         border-radius: 197.5px;
         height: 397px;
         flex-basis: calc((100% - 6 * 16px) / 3); 
@@ -96,8 +96,8 @@
 border-radius: 139.658px;
 // border-radius: 50%;
 
-&:hover {border-color:#BBF330; }
-&:focus {border-color:#BBF330; }   
+&:hover {border-color:getColor('accent-green'); }
+&:focus {border-color:getColor('accent-green'); }   
 }
 
     @media screen and  (max-width:768px){
